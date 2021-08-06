@@ -1,0 +1,24 @@
+<mat-card class="example-card">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <table class="table table-striped">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Browser</th>
+                        <th scope="col">Operating System</th>
+                        <th scope="col">Device Type</th>
+                        
+                    </tr>
+                </thead>
+                <tr *ngFor="let dl of service.list">
+                    <td>{{dl.browser}}</td>
+                    <td>{{dl.os}}</td>
+                    <td>{{dl.deviceType}}</td>
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</mat-card>

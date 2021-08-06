@@ -1,0 +1,17 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Client Device Details</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list role="list" *ngIf="deviceInfo">
+      <mat-list-item role="listitem">OS - {{deviceInfo.os}}</mat-list-item>
+      <mat-list-item role="listitem">Browser - {{deviceInfo.browser}}</mat-list-item>
+      <mat-list-item role="listitem">OS Version - {{deviceInfo.os_version}}</mat-list-item>
+      <mat-list-item role="listitem">Browser Version - {{deviceInfo.browser_version}}</mat-list-item>
+      <mat-list-item role="listitem">Device Type - {{deviceInfo.deviceType}}</mat-list-item>
+    </mat-list>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="insertRecord()">Submit</button>
+  </mat-card-actions>
+</mat-card>
